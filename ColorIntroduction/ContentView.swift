@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        VStack(spacing: 40) {
+            Divider()
+            Divider()
+            Divider()
+            HStack(spacing: 40) {
+                Color.pink.frame(width: 88, height: 88)
+                Color.blue.frame(width: 88, height: 88).shadow(radius: 20)
+                Color.purple.frame(width: 88, height: 88).cornerRadius(20)
+            }
+            Divider()
+            Divider()
+            Divider()
+        }
     }
 }
 
